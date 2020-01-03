@@ -4,7 +4,8 @@
   "description": "Software tracking member attendence using student IDs.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"electron ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/msucomputerclub/MCCAT-app#readme",
   "devDependencies": {
     "electron": "^7.1.7"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
   }
 }

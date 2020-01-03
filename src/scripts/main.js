@@ -1,6 +1,6 @@
 var request = new XMLHttpRequest();
 var date = new Date();
-request.open("GET", "http://localhost:5000/api/meeting/", true);
+request.open("GET", `${process.env.Server}/api/meeting/`, true);
 request.setRequestHeader("Accept", "application/json");
 request.setRequestHeader("Content-Type", "application/json");
 request.onload = function() {

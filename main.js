@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { app, BrowserWindow } = require("electron");
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -15,10 +16,10 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  win.loadFile("./public/index.html");
+  win.loadFile("./src/index.html");
 
   // Open the DevTools.
-  //   win.webContents.openDevTools();
+  win.webContents.openDevTools();
 
   // Emitted when the window is closed.
   win.on("closed", () => {
